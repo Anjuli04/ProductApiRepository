@@ -1,0 +1,14 @@
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\obj\Debug\ProductApi.infrastructure.csprojAssemblyReference.cache
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\obj\Debug\ProductApi.infrastructure.csproj.CoreCompileInputs.cache
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\ProductApi.infrastructure.dll.config
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\ProductApi.infrastructure.dll
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\ProductApi.infrastructure.pdb
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\EntityFramework.dll
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\ProductApi.core.dll
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\ProductApi.core.pdb
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\EntityFramework.xml
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\obj\Debug\ProductApi.infrastructure.csproj.CopyComplete
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\obj\Debug\ProductApi.infrastructure.dll
+C:\AnjuliTraining\WebApi\ProductApi\ProductApi.infrastructure\obj\Debug\ProductApi.infrastructure.pdb
