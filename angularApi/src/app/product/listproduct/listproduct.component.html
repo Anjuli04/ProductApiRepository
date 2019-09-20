@@ -1,0 +1,82 @@
+
+<div class="container">
+<div class="row">
+    <div class="row">
+        <div class="col-md-2">Filter By : </div>
+        <div class="col-md-6"><input [(ngModel)]='searchText' type="text" class="form-control" /></div>
+      </div>
+      <br>
+      <div class="row">
+    <div class="table-responsive">
+        
+    <table class="table table-striped">
+    <thead>
+    
+      <th>
+        ProductID
+      </th>
+      <th>
+        ImageUrl
+      </th>
+    <th>
+        Title
+    </th>
+      <th>
+            Color
+          </th>
+      <th>
+        Price
+      </th>
+      <th>
+       Quantity
+      </th>
+      <th>
+        Rating
+      </th>
+      <th>
+        InStock
+      </th>
+      
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products | productfilter:searchText">
+        
+        <td>
+          {{p.ProductID}}
+        </td>
+        <td>
+          <img [src]="p.ImageUrl"
+          [style.width.px]='imagewidth'
+          [style.margin.px]='imagemargin'>
+        </td>
+        <td>
+            <a (click)='productDetails(p.ProductID)'>{{p.Title}}</a>
+        </td>
+        <td>
+          {{p.Color}}
+        </td>
+        <td>
+          {{p.Price}}
+        </td>
+        <td>
+          {{p.Quantity}}
+        </td>
+      <td>
+      {{p.Rating}}
+      </td>
+        <td>
+         <i *ngIf='p.inStock' class="fa fa-check" aria-hidden="true"></i>
+         <i *ngIf='!p.inStock' class="fa fa-times" aria-hidden="true"></i>
+        </td>
+          
+            <button (click)='editProduct(p.ProductID)' class="btn btn-info"><i class="fa fa-edit"></i></button>
+          <td> <button (click)='deleteProduct(p.ProductID)' class="btn btn-danger"><i  class="fa fa-trash" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    
+

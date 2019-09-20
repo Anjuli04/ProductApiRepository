@@ -1,0 +1,28 @@
+<h2 class="text-center">Product : {{productidtoedit}} to edit</h2>
+<form [formGroup]='editProductForm' novalidate class="form">
+    Title
+    <input type="text" formControlName="Title" class="form-control"/>
+    <div class="alert alert-danger" *ngIf="editProductForm.get('Title').hasError('required') && editProductForm.get('Title').touched">
+        Title is required
+    </div>
+    Price
+    <input type="text" formControlName="Price" class="form-control"/>
+    Color
+    <input type="text" formControlName="Color" class="form-control"/>
+    Quantity
+    <input type="text" formControlName="Quantity" class="form-control"/>
+    InStock
+    <input type="text" formControlName="inStock" class="form-control"/>
+    Rating
+    <input type="text" formControlName="Rating" class="form-control"/>
+    Details
+    <input type="text" formControlName="Details" class="form-control"/>
+    ImageUrl
+    <input type="text" formControlName="ImageUrl" class="form-control"/>
+    ExpiryDate
+    <input type="text" formControlName="ExpiryDate" class="form-control"/>
+    <br/>
+    <button (click)='Goback()' style='margin-right:16px' class="btn">Back</button>
+    <button (click)='editProduct()' type="button" [disabled]='editProductForm.invalid' class="btn btn-info">Update</button>
+    <button [disabled]='editProductForm.invalid' (click)='setDefault()' class="btn btn-warning">Default</button>
+</form>

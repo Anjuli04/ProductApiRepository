@@ -1,0 +1,27 @@
+<div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <a class="navbar-brand">{{pageTitle}}</a>
+        <ul class="nav navbar-nav">
+          <li>
+            <a [routerLink]="['/home']">Home</a>
+          </li>
+          <li>
+              <a [routerLink]="['/addproduct']">AddProducts</a>
+            </li>
+          
+          <li>
+            <a [routerLink]="['/login']">Log In</a>
+          </li>
+  
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+  
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <router-outlet></router-outlet>
+      <!--<footer>Anjuli's App</footer> -->
+    </div>
+  </div>

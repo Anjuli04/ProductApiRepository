@@ -1,0 +1,79 @@
+
+<form [formGroup]='addProductForm' novalidate class='form'>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product ID</label>
+            <div class="col-sm-4">
+                <input formControlName='ProductID' type="text" class="form-control" placeholder="Enter ID" />
+            </div>
+        </div>
+      
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Name</label>
+            <div class="col-sm-4">
+                <input formControlName='Title' type="text" class="form-control" placeholder="Enter Title" />
+            </div>
+        </div>
+    
+    
+        <div class="alert alert-danger"
+            *ngIf="addProductForm.get('Title').hasError('required') && addProductForm.get('Title').touched">Product Name
+            is required</div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Price</label>
+            <div class="col-sm-4">
+                <input formControlName='Price' type="text" class="form-control" placeholder="Enter Price" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Color</label>
+            <div class="col-sm-4">
+                <input formControlName='Color' type="text" class="form-control" placeholder="Enter Color" />
+    
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product inStock</label>
+            <div class="col-sm-4">
+                <input formControlName='InStock' type="text" class="form-control" placeholder="Enter inStock" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Quantity</label>
+            <div class="col-sm-4">
+                <input formControlName='Quantity' type="text" class="form-control" placeholder="Enter Quantity" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Details</label>
+            <div class="col-sm-4">
+                <input formControlName='Details' type="text" class="form-control" placeholder="Enter Details" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product ImageUrl</label>
+            <div class="col-sm-4">
+                <input formControlName='ImageURL' type="text" class="form-control" placeholder="Enter ImageURL" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Expiry Date</label>
+            <div class="col-sm-4">
+                <input formControlName='ExpiryDate' type="text" class="form-control" placeholder="Enter Expiry" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Product Rating</label>
+            <div class="col-sm-4 ">
+                <input formControlName='Rating' type="text" class="form-control" placeholder="Enter Rating" />
+            </div>
+        </div>
+        <br>
+        <button (click)='Goback()' style='margin-right:16px' class="btn">Back</button>
+        <button (click)='addProduct(id)' style='margin-right:16px' [disabled]='addProductForm.invalid'
+            class="btn btn-info">Save</button>
+    
+        <button (click)='setDefault()' class="btn btn-warning">Reset</button>
+    
+    </form>
+    
+
